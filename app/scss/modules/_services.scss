@@ -1,0 +1,47 @@
+.services {
+  // Box model
+  padding-bottom: 3.75rem;
+}
+
+.services__title {
+  // Box model
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+
+  // Typography
+  text-transform: capitalize;
+  font-family: $titleFont;
+  font-weight: 700;
+  font-size: 1.62rem;
+  line-height: 1.78rem;
+}
+
+//////////////////////////////////////
+//          services__list          //
+//////////////////////////////////////
+.services__list {
+  // Box model
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.063rem;
+  margin-bottom: 2.5rem;
+
+  // Typography
+  list-style: none;
+}
+
+li.services__item {
+  // Box model
+  padding-bottom: 1.62rem;
+  padding-top: 5.62rem;
+
+  // Typography
+  text-align: center;
+
+  // Visual
+  background-color: $tuna;
+}
+
+//////////////////////////////////////
+//            services__btn         //
+//////////////////////////////////////

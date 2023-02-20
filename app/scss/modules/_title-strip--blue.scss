@@ -1,0 +1,11 @@
+.title-strip--blue {
+  // Box model
+  width: 3.75rem;
+  height: 0.25rem;
+  border: none;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+  // Visual
+  background-color: $cloudyBlue;
+}

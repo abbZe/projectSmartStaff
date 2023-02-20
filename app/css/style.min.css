@@ -53,7 +53,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -192,6 +192,7 @@ header.main-header {
 
 .hero {
   padding-inline: 1rem;
+  padding-bottom: 0.75rem;
   margin-bottom: 2rem;
   background-image: url(../images/hero/hero-background-man.png);
   background-repeat: no-repeat;
@@ -297,13 +298,51 @@ header.main-header {
   height: 1.25rem;
 }
 
-.hero__link {
+.services {
+  padding-bottom: 3.75rem;
+}
+
+.services__title {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.62rem;
+  line-height: 1.78rem;
+}
+
+.services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.063rem;
+  margin-bottom: 2.5rem;
+  list-style: none;
+}
+
+li.services__item {
+  padding-bottom: 1.62rem;
+  padding-top: 5.62rem;
+  text-align: center;
+  background-color: #313a4e;
+}
+
+.title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.link--red {
   position: relative;
   display: block;
   padding-block: 0.75rem;
   padding-left: 5.31rem;
   padding-right: 7.31rem;
-  margin-bottom: 0.75rem;
   font-size: 1.12rem;
   line-height: 1.56rem;
   color: #fdfdfd;
@@ -311,7 +350,7 @@ header.main-header {
   background-color: #c43742;
 }
 
-.hero__link::after {
+.link--red::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -325,12 +364,24 @@ header.main-header {
   background-image: url("../images/hero/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
+  -webkit-transition: -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  -o-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
 }
 
-.title {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2rem;
-  line-height: 2.3rem;
-  color: #fff;
-  font-weight: 700;
+.link--red:hover::after {
+  -webkit-transform: translate(-4.8rem, 1rem);
+      -ms-transform: translate(-4.8rem, 1rem);
+          transform: translate(-4.8rem, 1rem);
+}
+
+.title-strip--blue {
+  width: 3.75rem;
+  height: 0.25rem;
+  border: none;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: #a5bef6;
 }
