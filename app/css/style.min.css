@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 4.2655vw;
+  background-color: #272e3e;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.button {
+  border: none;
+  background-color: none;
+}
+
+@media (min-width: 1000px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  display: none !important;
+}
+@media (min-width: 1000px) {
+  .desktop-only {
+    display: block !important;
+  }
+}
+
+header.main-header {
+  position: sticky;
+  top: -1px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 1rem;
+  padding-block: 0.93rem;
+  margin-bottom: 3rem;
+  background-color: #ddeded;
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-btn__strip,
+.menu-btn__strip::before,
+.menu-btn__strip::after {
+  width: 1.13rem;
+  height: 0.13rem;
+  border-radius: 0.06rem;
+}
+
+.menu-btn__strip {
+  position: relative;
+  background-color: #4969b5;
+}
+
+.menu-btn__strip::before {
+  position: absolute;
+  bottom: 0.37rem;
+  background-color: #c43742;
+  content: "";
+}
+
+.menu-btn__strip::after {
+  position: absolute;
+  top: 0.37rem;
+  background-color: #272e3e;
+  content: "";
+}
+
+.main-header__logo a img {
+  width: 5.68rem;
+  height: 1.5rem;
+}
+
+.main-header__call-btn {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 1.87rem;
+  height: 1.87rem;
+  background-color: #4969b5;
+}
+
+.main-header__call-btn::before {
+  position: absolute;
+  -webkit-transform: translate(39%, 39%);
+      -ms-transform: translate(39%, 39%);
+          transform: translate(39%, 39%);
+  width: 1.06rem;
+  height: 1.06rem;
+  content: "";
+  background-image: url("../images/main-header/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  padding-inline: 1rem;
+  margin-bottom: 2rem;
+  background-image: url(../images/hero/hero-background-man.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 14.5rem;
+}
+
+.hero__title {
+  margin-bottom: 1.06rem;
+}
+
+.hero__services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.87rem;
+  margin-bottom: 1.56rem;
+  list-style: none;
+}
+
+.hero__services-item {
+  position: relative;
+  margin-left: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.hero__services-item::before {
+  position: absolute;
+  left: -1.21rem;
+  top: 0.25rem;
+  display: block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  content: "";
+  background: -o-linear-gradient(315deg, #4969b5 50%, #c43742 50%);
+  background: linear-gradient(135deg, #4969b5 50%, #c43742 50%);
+}
+
+.hero__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.063rem;
+  margin-bottom: 1.81rem;
+}
+
+.hero__benefits-item {
+  position: relative;
+  padding-block: 0.5rem;
+  padding-right: 0.75rem;
+  padding-left: 2.87rem;
+  width: 11.3rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.87rem;
+  line-height: 1.3rem;
+  list-style: none;
+  background-color: rgba(253, 253, 253, 0.1);
+}
+
+.hero__benefits-item::before {
+  position: absolute;
+  left: 1rem;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.hero__benefits-item:nth-child(1)::before {
+  background-image: url("../images/hero/payment.svg");
+  width: 1.43rem;
+  height: 1.25rem;
+}
+
+.hero__benefits-item:nth-child(2)::before {
+  background-image: url("../images/hero/staff.svg");
+  width: 1.12rem;
+  height: 1.35rem;
+}
+
+.hero__benefits-item:nth-child(3)::before {
+  background-image: url("../images/hero/postponement.svg");
+  width: 1.25rem;
+  height: 1.37rem;
+}
+
+.hero__benefits-item:nth-child(4)::before {
+  background-image: url("../images/hero/round-the-clock.svg");
+  width: 1.12rem;
+  height: 1.25rem;
+}
+
+.hero__link {
+  position: relative;
+  display: block;
+  padding-block: 0.75rem;
+  padding-left: 5.31rem;
+  padding-right: 7.31rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.12rem;
+  line-height: 1.56rem;
+  color: #fdfdfd;
+  text-decoration: none;
+  background-color: #c43742;
+}
+
+.hero__link::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(-5.8rem, 1rem);
+      -ms-transform: translate(-5.8rem, 1rem);
+          transform: translate(-5.8rem, 1rem);
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  content: "";
+  background-image: url("../images/hero/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+
+.title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #fff;
+  font-weight: 700;
+}

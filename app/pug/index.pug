@@ -1,0 +1,12 @@
+//--- index.pug => index.html
+extends ./layouts/layout.pug
+
+
+block vars 
+  - var title = `Главная`;
+  - var description = `Сайт для найма персонала под любые задачи`;
+
+
+block content
+  include ./modules/_hero.pug
+  include ./modules/_services.pug
