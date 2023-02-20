@@ -43,7 +43,7 @@
   line-height: 1.4rem;
 }
 
-// below, it's a bullets for list-items
+// it's a bullets for list-items below
 .hero__services-item::before {
   // Positioning
   position: absolute;
@@ -73,6 +73,7 @@
   // Box model
   margin-bottom: 1.81rem;
 }
+
 .hero__benefits-item {
   // Positioning
   position: relative;
@@ -118,6 +119,7 @@
 .hero__benefits-item:nth-child(2)::before {
   // Visual
   background-image: url('../images/hero/staff.svg');
+
   // Box model
   width: 1.12rem;
   height: 1.35rem;

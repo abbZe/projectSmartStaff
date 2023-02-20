@@ -36,12 +36,65 @@ li.services__item {
   padding-top: 5.62rem;
 
   // Typography
+  font-family: $mainFont;
+  font-size: 0.75rem;
+  line-height: 0.81rem;
+  font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
 
   // Visual
   background-color: $tuna;
+  background-repeat: no-repeat;
+  background-position: center 1.6rem;
+}
+
+li.services__item:nth-child(1) {
+  // Visual
+  background-image: url('../images/services/flat-moving.svg');
+  background-size: 4.93rem 3.25rem;
+}
+
+li.services__item:nth-child(2) {
+  // Visual
+  background-image: url('../images/services/office-moving.svg');
+  background-size: 5.75rem 3.25rem;
+}
+
+li.services__item:nth-child(3) {
+  // Visual
+  background-image: url('../images/services/cleaning.svg');
+  background-size: 3.81rem 3.25rem;
+}
+
+li.services__item:nth-child(4) {
+  // Visual
+  background-image: url('../images/services/transporting.svg');
+  background-size: 3.87rem 3.25rem;
+}
+
+li.services__item:nth-child(5) {
+  // Visual
+  background-image: url('../images/services/workers.svg');
+  background-size: 2.62rem 3.25rem;
+}
+
+li.services__item:nth-child(6) {
+  // Visual
+  background-image: url('../images/services/moving.svg');
+  background-size: 5.12rem 3.25rem;
 }
 
 //////////////////////////////////////
 //            services__btn         //
 //////////////////////////////////////
+.services__btn {
+  // Box model
+  margin-inline: 1rem;
+
+  // Typography
+  font-family: $titleFont;
+  font-size: 1.12rem;
+  line-height: 1.56rem;
+  font-weight: 600;
+}
